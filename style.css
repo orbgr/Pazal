@@ -1,0 +1,276 @@
+.button {
+    background-color: transparent;
+    border: 0;
+    color: #efedbb;
+    font-size: 3rem;
+    font-weight: 1000;
+    cursor: pointer;
+    margin: auto 0;
+    left: -6%;
+    position: relative;
+    z-index: 100;
+}
+
+#input {
+    width: 30rem;
+    padding: 1.1rem 1.1rem;
+    border-radius: 5rem;
+    transition: border .35s ease-in-out;
+    font-family: cursive;
+    font-size: 1.7rem;
+    margin: auto 0;
+    border: 0.3rem solid transparent;
+    position: relative;
+    z-index: 0;
+}
+
+
+*:focus {
+    outline: 0;
+}
+
+#input:focus {
+    border:0.3rem solid #efedce;
+}
+
+
+.submit {
+    border: 0.2rem solid #efdbbf;
+    color: #efdbbf;
+    background-color: #9cb8b3;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 1000;
+    margin: auto 0;
+    cursor: pointer;
+    margin-left: 0rem;
+    font-family: cursive;
+    border-radius: 35%;
+    position: relative;
+    z-index: 200;
+    left: -1%;
+}
+
+#errDiv {
+    text-align: center;
+    font: 600 1rem/1 'Raleway', sans-serif;
+    color: rgba(255, 0, 0, 0.7);
+    /* top: -17%; */
+    width: 100%;
+    top: -.5rem;
+    /* left: -15%; */
+    left: -10rem;
+    position: relative;
+}
+
+.ing {
+    display: inline;
+    vertical-align:top;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -6rem;
+    left: 28rem;
+}
+
+
+.button2 {
+    border: none;
+    color: rgba(0,0,0,.6);
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: 1000;
+    background-color: #efedce;
+    font-family: cursive;
+    cursor: pointer;
+    transform: translate(-38rem, 7rem);
+    border-radius: 45%;
+    margin: .3rem;
+    left: 0%;
+    top: 0%;
+}
+
+.photo {
+    width: 22.5rem;
+    border-radius: 30%;
+}
+
+    
+#htmlPage {
+    margin: auto 0;
+    position: absolute;
+    text-align: center;
+    top: 15rem; 
+    left: 5rem; 
+    width: 100%;
+    height: 100%;
+}
+
+#dele {
+    color: red;
+    font-size: 1.2rem;
+    top: -1rem;
+}
+
+.photo:hover {
+    box-shadow: 0 0 2rem 0.7rem rgba(1, 141, 185, 0.5);
+}
+
+.cur {
+cursor: pointer;
+} 
+
+
+
+
+
+/* header */
+
+#hed {
+    width: 100%;
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+}
+
+body { background: #9cb8b3; }
+
+h1 {
+    font: 600 1.5rem/1 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    top: 0%;
+    width: 100%;
+    position: absolute;
+}
+
+span, span:after {
+    font-weight: 900;
+    color: #efedce;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    letter-spacing: .1rem;
+    padding: .2rem 0 .25rem 0;
+}
+
+span {
+    font-size: 5.5rem;
+    z-index: 100;
+}
+
+span:after {
+    color: rgba(0,0,0,.35);
+    position: absolute;
+    left: .0875rem;
+    top: .0875rem;
+    z-index: -1;
+}
+
+
+/* recipes */
+
+#header {
+    top: -5rem;
+    position: relative;
+    display: inline-block;  
+    cursor: pointer;
+    padding-top: 5rem;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin-right: 1rem;
+    left: -4rem;
+}
+
+.imageRecipe {
+    border-radius: 30%;
+    box-sizing: border-box;
+    width: 20rem;  
+}
+
+#header:hover .imageRecipe {
+    transition: .5s ease;
+    opacity: 0.4;   
+    box-shadow: 0 0 3em 2em #efedce;
+}
+
+#header:hover #middle {
+     opacity: 1;  
+}
+
+#middle {
+    position: absolute;
+    top: 2rem;
+    left: 0rem;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    color: black;
+    text-align:justify; 
+    font-weight:300;
+}
+
+h5 {
+    position: absolute;
+    top: -.5rem;
+    color: #CEF0D4; 
+    font-family: 'Rouge Script', cursive;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 6rem;
+    text-align: center; 
+    left: 3.7rem;
+    white-space: nowrap;
+}
+
+h6 { 
+    position: absolute;
+    color: #333;
+    top: 4rem;
+    left: 5rem;
+    font-family: 'Original Surfer', cursive;
+    font-size: .6rem; 
+    text-align: center;
+    margin: 0 0 2rem; 
+    white-space: pre-line;
+}
+
+#back {
+    float: left;
+    font-size: 2.2rem;
+    margin: 1em auto;
+    position: absolute;
+    text-align: center;
+    width: 6.5rem;
+    background-color: #efdbbf;
+    color: #efedce;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+
+
+#title {
+    font-size: 1rem;
+    color: black;
+    text-decoration: underline;
+}
+
+h3 {
+    position: absolute;
+    top: -3rem;
+    color: #CEF0D4; 
+    font-family: 'Rouge Script', cursive;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 6rem;
+    text-align: center; 
+    left: 14rem;
+    
+}

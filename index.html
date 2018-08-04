@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T A V S H I L</title>
+    <script src='client.js'  type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+  <body>
+    <div id="hed"><h1>Be a chef with home products<br><span data-shadow-text="Text-Shadow">tavshil</span><br> by or berger</h1>
+    <div > <a href="/" id="back"></a> </div>
+    <div id="htmlPage">
+        <div id="errDiv"></div>
+        <input type="text" id="input" onKeyPress="isEnter(event)" placeholder="Add ingredient"  autocomplete="off" maxlength="15" onfocus="focusFunc(this)">
+        <button id="add" class="button" onclick="addIngredient()">+</button>
+        <input type="submit" class="submit" value="submit" onclick="recipes()"/>
+        <div class='container'>
+        <p class="ing"> </p>
+      </div>
+    </div>
+    
+        
+    </div>
+  </body>
+
+</html>
