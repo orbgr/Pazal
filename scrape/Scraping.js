@@ -6,7 +6,7 @@ let fs = require("fs");
 let mongo = require('mongodb').MongoClient;
 
 // init
-let text = fs.readFileSync("./urls.txt", "utf-8");
+let text = fs.readFileSync(path.join(__dirname, "urls.txt"), "utf-8");
 let links = text.split("\n");
 links = [...new Set(links)];
 let all = [];
