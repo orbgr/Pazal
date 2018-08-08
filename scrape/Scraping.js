@@ -51,7 +51,7 @@ links.forEach(link => {
 });
  Promise.all(ps).then(() => {
     console.log("-I- End scraping. Now it's the DB turn");
-    mongo.connect('mongodb://localhost:27017', (err, client) => {
+    mongo.connect('mongodb://localhost:27017', { useNewUrlParser: true }, (err, client) => {
         if (err) {
             console.log(err);
         } 
