@@ -47,7 +47,7 @@ app.listen(8001, (err, res) => {
         console.log("-E- SERVER ERROR:" + err);
         return;
     }
-    mongo.connect('mongodb://localhost:27017', (err, cli) => {
+    mongo.connect('mongodb://localhost:27017', { useNewUrlParser: true }, (err, cli) => {
         if (err) {
             console.log("-E- DB ERROR:" + err);
             return;

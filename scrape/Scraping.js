@@ -12,6 +12,8 @@ links = [...new Set(links)];
 let all = [];
 let ps = [];
 
+
+
 // Scraping - foreach link we got promise (adden to ps array).
 links.forEach(link => {
     let dict = { 'url': '' ,'name': '' , 'image':'', 'nut_main':[] , 'nut_sec':[] , 'nutrition':{} };

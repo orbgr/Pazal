@@ -115,6 +115,7 @@ function showRecipes(recipesArr){
             + '</div>';
             iter++;
         });
+        
     } else {
         // let allPara = document.getElementsByTagName("p");
         // while (allPara[0]) allPara[0].parentNode.removeChild(allPara[0])
@@ -124,7 +125,8 @@ function showRecipes(recipesArr){
         noRecipe.innerHTML = "There are no recipes found for this ingredients. You can try again!";
         html.appendChild(noRecipe);
         
-        let cssBack = "float: center;font-size: 4rem;margin: 1em auto;position: relative;top: 17.5rem;left: 33rem; text-align: center;width: 15rem;background-color: #efdbbf;color: #efedce;border-radius: 15%;text-decoration: none;";
+        let cssBack = "float: center;font-size: 4rem;margin: 1em auto;position: absolute;top: 50%;left: 50%;transform: translate(-50%, 350%);" +
+        "text-align: center;width: 15rem;background-color: #efdbbf;color: #efedce;border-radius: 15%;text-decoration: none;";
         back.style.cssText = cssBack;
     }
     return;
