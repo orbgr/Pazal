@@ -5,13 +5,17 @@ all you need is just add your'e ingredients.
 
 
 
-Instruction:
+Before entering the site:
 
-0. npm install
-1. Open DB mongo client on default port - 27017. 
-2. For DB - run ./scrape/Scraping.js
-3. Open the server - port 8001.
-4. In the home page you have text input - you can add ingredients and delete them if needed (insert "cheese" for some results).
-5. To end .1. enter submit.
-6. In the recipes page you will show the recipe name, picture and nutrition data. If clicled you will get to the full-recipe.
+1. For installing all modulus - `npm install`
+2. Open DB mongo client on default port - 27017. `mongod.exe`
+3. For DB inserting - run `node ./scrape/Scraping.js`  
+4. Open the server `node ./server.js`
+
+Site guideness:
+
+1. In the home page you have text input - you can add ingredients and delete them if needed (for example, insert "cheese" for some results).
+2. To end .1. enter submit.
+3. If there are recipes with those ingredients: You will show the recipe name, picture and nutrition data. If clicled you will get to the full-recipe.  
+   else, you can click on "back" and search again.
 
