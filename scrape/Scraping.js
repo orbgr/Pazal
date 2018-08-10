@@ -23,16 +23,17 @@ links.forEach(link => {
         transform: body => cheerio.load(body)
     }
     ps.push(rp(web));
-    rp(web).then($ => {
+    rp(web)
+        .then($ => {
             dict.url = link;
             dict.name = $("[class='fela-1qd1muk fela-98xdn8'] > h1").html();
             dict.image = $("[class='fela-1b1idjb']").attr('src') ; 
             $("[class='fela-z7wz1t fela-14a79rr'] > div > div:nth-child(4) > div").each((index, element) => {
                 let n = $(element).find('div:nth-child(2) > p:nth-child(2)').html();
-                if (!n) {
+                if (n == null) {
                     dict['nut_main'].push(n);
                 } else {
-                    n = n.replace(/[^A-Za-z]+/g,"");
+                    n = n.replace(/[^A-Za-z\s]/g,"");
                     dict['nut_main'].push(n.substring(0,30));
                 }
             });
@@ -46,7 +47,12 @@ links.forEach(link => {
             });
             all.push(dict);
             console.log("-I- End Process of link: " + link);
-    });
+    })
+
+        .catch(error => {
+            assert.isNotOk(error,'Promise error');
+        });
+
 // handling the promises array -> pushing data to DB.
 });
  Promise.all(ps).then(() => {

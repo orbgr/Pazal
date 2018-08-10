@@ -28,8 +28,8 @@ app.get('/search', (req,res) => {
             nut_main: { $push: '$nut_main' }, nut_sec: { $first: '$nut_sec' }, url: { $first: '$url' },
             image : { $first: '$image' }, count: { $sum: 1 } }},
             {$sort: {count: -1}},
-            {$limit : 6 },
-        ]).toArray((err, result) => {
+            {$limit : 6 }
+            ]).toArray((err, result) => {
                 if (err) {
                     res.status(500).send(err);
                     res.end();
